@@ -7,13 +7,12 @@ function About() {
   return(
     <div id="about" className="w-full h-screen py-5 px-32">
       <div className="flex flex-col gap-8 mt-32 mb-5">
-        <div className="font-bold text-5xl text-center mb-2">
+        <div className="font-bold text-5xl text-center mb-10">
           i&apos;m <span className="text-green">chu lin</span>.
         </div>
         <div className="flex flex-col gap-2">
-          <p>Hello! I&apos;m a software engineer.</p>
           <p className="text-justify">
-            Since writing my first lines of code and delving into complex algorithms, I&apos;ve been captivated by technology&apos;s ability to solve problems and enhance digital experiences for everyone. Throughout my journey, I&apos;ve dedicated myself to mastering this craft, continually pushing the boundaries of what&apos;s possible. My portfolio showcases not just my technical expertise but also my passion for creating impactful solutions that make a difference. Join me as I strive to innovate and improve the digital landscape, one line of code at a time.
+          Hello! I&apos;m a software engineer. <br/><br/>With a strong foundation in both frontend and backend development, I enjoy creating efficient, user-friendly solutions that solve real-world problems. Through my internships and academic projects, I&apos;ve gained hands-on experience with various technologies, including React, Django, AWS, and more. I&apos;m constantly learning and exploring new tools and methodologies to improve my skills. <br/><br/>Welcome to my portfolio, where you can see some of the projects I&apos;ve worked on, showcasing my journey as a developer and my commitment to building impactful software.
           </p>
         </div>
         <div className="flex flex-row gap-3">

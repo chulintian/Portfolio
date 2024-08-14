@@ -22,25 +22,26 @@ function ProjectCard({ height, title, description, skills, link }) {
           height={0}
           sizes="100vw"
           style={{ width: '100%', height: 'auto' }}
+          className=" rounded-lg"
         />
 
         {/* project overlay */}
-        <div className="absolute top-0 left-0 w-full h-full opacity-0 hover:opacity-100 transition-opacity duration-300 bg-gray bg-opacity-50 flex justify-start items-end text-white p-5">
-          <div>
-            <h3 className="text-xl font-bold flex flex-row gap-2">
-              {title}
-              <a href={link} target="_blank" rel="noopener noreferrer">
+        <a href={link} target="_blank" rel="noopener noreferrer">
+          <div className="absolute top-0 left-0 w-full h-full opacity-0 hover:opacity-100 transition-opacity duration-300 bg-gray bg-opacity-50 flex justify-start items-end text-white p-5 rounded-lg">
+            <div>
+              <h3 className="text-xl font-bold flex flex-row gap-2">
+                {title}
                 <FiArrowUpRight size={22} className="flex self-center"/>
-              </a>
-            </h3>
-            <p className="text-sm mt-1">{description}</p>
-            <div className="flex flex-row gap-2 mt-3">
-              {skills.map((skill, index) => (
-                <Tag content={skill} key={index} />
-              ))}
+              </h3>
+              <p className="text-sm mt-1">{description}</p>
+              <div className="flex flex-row gap-2 mt-3">
+                {skills.map((skill, index) => (
+                  <Tag content={skill} key={index} />
+                ))}
+              </div>
             </div>
           </div>
-        </div>
+        </a>
 
       </div>
     </div>
@@ -49,10 +50,10 @@ function ProjectCard({ height, title, description, skills, link }) {
 
 function Projects() {
   const projects = [
-    { height: "72", title: "Insightify", description: "News screening tool for Know Your Customer (KYC) purposes", skills: ["Next.js", "FastAPI", "Javascript", "Azure"], link: "" },
     { height: "96", title: "ToTheCloset", description: "Clothing rental platform with image search functionality and AI-powered text search", skills: ["Next.js", "Javascript", "Tailwind CSS", "AWS"], link: "https://www.youtube.com/watch?v=mlw1beXC-eY" },
-    { height: "96", title: "Call Center System", description: "Call Center Solution to streamline response time and ensure consistency in ticket generation and classification", skills: ["React", "Javascript", "Django", "AWS"], link: "" },
-    { height: "72", title: "ExploreLah!", description: "All-in-one trip planner platform helping tourists by creating a curated itinerary to explore around Singapore", skills: ["HTML", "Boostrap", "Vue.js", "Javascript"], link: "" },
+    { height: "72", title: "Insightify", description: "News screening tool for Know Your Customer (KYC) purposes", skills: ["Next.js", "FastAPI", "Javascript", "Azure"], link: "https://www.youtube.com/watch?v=c3nDIXG-2-A" },
+    { height: "96", title: "Maia", description: "Call Center Solution to streamline response time and ensure consistency in ticket generation and classification", skills: ["React", "Javascript", "Django", "AWS"], link: "https://www.youtube.com/watch?v=GtgbgoAYab0" },
+    { height: "72", title: "ExploreLah!", description: "All-in-one trip planner platform helping tourists by creating a curated itinerary to explore around Singapore", skills: ["HTML", "Boostrap", "Vue.js", "Javascript"], link: "https://www.youtube.com/watch?v=iiwGMP47M0k&t=180s" },
   ];
 
   return (
