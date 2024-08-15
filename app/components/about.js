@@ -11,7 +11,7 @@ function About() {
           i&apos;m <span className="text-green">chu lin</span>.
         </div>
         <div className="flex flex-col gap-2">
-          <p className="text-justify">
+          <p className="md:text-justify">
           Hello! I&apos;m a software engineer. <br/><br/>With a strong foundation in both frontend and backend development, I enjoy creating efficient, user-friendly solutions that solve real-world problems. Through my internships and academic projects, I&apos;ve gained hands-on experience with various technologies, including React, Django, AWS, and more. I&apos;m constantly learning and exploring new tools and methodologies to improve my skills. <br/><br/>Welcome to my portfolio, where you can see some of the projects I&apos;ve worked on, showcasing my journey as a developer and my commitment to building impactful software.
           </p>
         </div>
