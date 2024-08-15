@@ -5,7 +5,7 @@ import { FaLinkedin } from "react-icons/fa";
 function About() {
 
   return(
-    <div id="about" className="w-full h-screen py-5 px-32">
+    <div id="about" className="w-full min-h-screen py-5 px-10 md:px-16 lg:px-32">
       <div className="flex flex-col gap-8 mt-32 mb-5">
         <div className="font-bold text-5xl text-center mb-10">
           i&apos;m <span className="text-green">chu lin</span>.

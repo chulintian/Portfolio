@@ -15,7 +15,7 @@ function Testimonials() {
     ];
   
     return (
-      <div id="testimonials" className="w-full min-h-screen flex flex-col py-5 px-32 gap-8">
+      <div id="testimonials" className="w-full min-h-screen flex flex-col py-5 px-10 md:px-16 lg:px-32 gap-8">
         <div className="font-bold text-5xl text-center mt-32 mb-5">
           testimonials.
         </div>
