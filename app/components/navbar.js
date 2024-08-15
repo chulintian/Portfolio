@@ -1,9 +1,11 @@
 "use client"
-import React, { useState } from "react";
+import React from "react";
 
-function NavBar() {
+function NavBar({
+  selectedHeader,
+  setSelectedHeader,
+}) {
   const headers = ["about", "projects", "testimonials"];
-  const [selectedHeader, setSelectedHeader] = useState(headers[0]);
 
   const scrollToSection = (header) => {
     const element = document.getElementById(header);
