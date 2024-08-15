@@ -14,8 +14,8 @@ function NavBar() {
   };
 
   return (
-    <div className="top-0 right-5 left-5 fixed flex justify-center z-50 ">
-      <div className="text-white my-5 flex flex-row gap-5 bg-gray rounded-full py-3 px-5 opacity-95">
+    <div className="top-0 right-0 left-0 fixed flex justify-center z-50 px-10">
+      <div className="text-white my-5 flex flex-row gap-2 md:gap-5 bg-gray rounded-full py-3 px-5 opacity-95">
         {headers.map((header, index) => (
           <div
             key={index}
